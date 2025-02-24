@@ -12,10 +12,10 @@ then
 else
     dnf install mysql -y
 fi
-dnf list installed git
-if [ $? -ne 0 ]
+dnf list installed httpd
+if [ $? -eq 0 ]
 then
-    dnf install git -y
- echo "Git installed successfully"
- exit 1
+    echo "httpd is already installed"
+else
+    dnf install httpd -y
 fi
