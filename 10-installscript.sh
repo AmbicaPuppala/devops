@@ -16,6 +16,7 @@ dnf list installed git
 if [ $? -ne 0 ]
 then
     dnf install git -y
+if [ $? -ne 0 ]    
  then
  echo "Git installed successfully"
  exit 1
