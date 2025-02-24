@@ -12,3 +12,11 @@ then
 else
     dnf install mysql -y
 fi
+dnf list installed git
+if [ $? -ne 0 ]
+then
+    dnf install git -y
+then
+ echo "Git installed successfully"
+ exit 1
+fi
