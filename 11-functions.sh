@@ -3,10 +3,10 @@ USERID=$(id -u)
 validate() {
     if [ $1 -ne 0 ]
     then
-        echo "Installing MYSQL failed"
+        echo "$2 failed"
         exit 1
     else
-        echo "Installing MYSQ success"
+        echo "$2 success"
     fi
 }
 if [ $USERID -ne 0 ]
