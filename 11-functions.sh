@@ -22,10 +22,10 @@ then
  else
     echo "mysql is already installed"
 fi
-dnf list installed git
+dnf list installed httpd
 if [ $? -eq 0 ]
 then
-    echo "git is already installed"
+    echo "httpd is already installed"
 else
-    dnf install git -y "Installing GIT"
+    dnf install httpd -y "Installing httpd"
 fi
