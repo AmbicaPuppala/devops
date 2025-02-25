@@ -27,5 +27,6 @@ if [ $? -eq 0 ]
 then
     echo "httpd is already installed"
 else
-    dnf install httpd -y "Installing httpd"
+    dnf install httpd -y 
+    validate $? "Installing httpd"
 fi
