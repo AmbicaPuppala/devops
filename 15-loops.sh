@@ -39,3 +39,4 @@ do
     else
         echo -e "$package is already ... $Y INSTALLED $N"
     fi
+done
