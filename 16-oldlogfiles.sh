@@ -24,5 +24,5 @@ VALIDATE(){
 
 echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
-FILES_TO_DELETE=(find $SOURCE_DIR . -name "*.log" -mtime +14)
+FILES_TO_DELETE=$(find $SOURCE_DIR . -name "*.log" -mtime +14)
 echo "Files to delete: $FILES_TO_DELETE" 
