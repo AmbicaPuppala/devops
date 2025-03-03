@@ -47,3 +47,10 @@ echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
 echo "Files to backup: $FILES"
+
+if [ -n "$FILES" ]
+then
+    echo "Files to backup: $FILES"
+ else
+    echo "No files older than $DAYS to backup"
+fi    
