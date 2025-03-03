@@ -30,7 +30,15 @@ if [ $# -lt 2 ]
 then
     USAGE
 fi
-
+if [ ! -d $SOURCE_DIR ]
+then
+    echo "$Source_DIR directory does not exist"
+    exit 1
+fi
+if [ ! -d $DEST_DIR ]
+then
+    echo "$DEST_DIR directory does not exist"
+    exit 1
 
 mkdir -p $LOGS_FOLDER
 
