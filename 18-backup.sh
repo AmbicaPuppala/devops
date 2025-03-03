@@ -44,3 +44,6 @@ fi
 mkdir -p $LOGS_FOLDER
 
 echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
+
+FILES=$(Find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
+echo "Files to backup: $FILES"
