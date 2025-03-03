@@ -32,7 +32,7 @@ then
 fi
 if [ ! -d $SOURCE_DIR ]
 then
-    echo "$Source_DIR Source directory does not exist"
+    echo "$SOURCE_DIR Source_DIR Source directory does not exist"
     exit 1
 fi
 if [ ! -d $DEST_DIR ]
