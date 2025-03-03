@@ -37,7 +37,7 @@ then
 fi
 if [ ! -d $DEST_DIR ]
 then
-    echo "$DEST_DIR directory does not exist"
+    echo "$DEST_DIR Destination directory does not exist"
     exit 1
 fi
 
