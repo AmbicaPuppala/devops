@@ -51,6 +51,8 @@ echo "Files to backup: $FILES"
 if [ -n "$FILES" ]
 then
     echo "Files to backup: $FILES"
+    ZIP_FILE="$DEST_DIR/backup-$TIMESTAMP.ZIP"
+    find $SOURCE_DIR -name "*.log" -mtime +$DAYS | zip -@ "$ZIP_FILE"
  else
     echo "No files older than $DAYS to backup"
 fi    
