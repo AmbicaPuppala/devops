@@ -39,6 +39,7 @@ if [ ! -d $DEST_DIR ]
 then
     echo "$DEST_DIR directory does not exist"
     exit 1
+fi
 
 mkdir -p $LOGS_FOLDER
 
