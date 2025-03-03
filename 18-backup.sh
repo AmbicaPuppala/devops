@@ -5,7 +5,8 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-SOURCE_DIR="/home/ec2-user/app-logs"
+SOURCE_DIR=$1
+DEST_DIR=$2
 DAYS=$[3:-14]
 LOGS_FOLDER="/home/ec2-user/shellscript-logs"
 LOG_FILE=$(echo $0 | cut -d "." -f1 )
