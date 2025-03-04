@@ -5,7 +5,7 @@ MSG=""
 while read -r line
 do
     echo $line
-    USAGE=$(echo $line | awk '{print $6}' | cut -d "%" -f1)
+    USAGE=$(echo $line | awk -f "" '{print $6}' | cut -d "%" -f1)
     PARTITION=$(echo $line | awk '{print $NF}')
     if [ $USAGE -ge $DISK_THRESHOLD ]
     then
