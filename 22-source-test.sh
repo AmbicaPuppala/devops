@@ -1,5 +1,5 @@
 #!/bin/bash
-source ./22-source-test.sh
+source ./common.sh
 echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
 FILES_TO_DELETE=$(find $SOURCE_DIR . -name "*.log" -mtime +14)
